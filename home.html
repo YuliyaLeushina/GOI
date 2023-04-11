@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230411120513">
+	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -29,7 +30,37 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item"><a href="" class="menu__link">new In</a></li>
-								<li class="menu__item"><a href="" class="menu__link menu__link_arrow">shop</a>
+								<li class="menu__item menu__item_dropdown"><a href="" class="menu__link menu__link_arrow">shop</a>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">swimwear</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item menu__item_dropdown"><a href="" class="menu__link menu__link_arrow">campaigns</a>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">swimwear</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">swimwear</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item menu__item_dropdown"><a href="" class="menu__link menu__link_arrow">about</a>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">swimwear</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">swimwear</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">swimwear</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item menu__item_dropdown"><a href="" class="menu__link menu__link_arrow">about</a>
 									<ul class="menu__sub-list">
 										<li class="menu__sub-item">
 											<a href="" class="menu__sub-link">swimwear</a>
@@ -48,7 +79,7 @@
 										</li>
 									</ul>
 								</li>
-								<li class="menu__item"><a href="" class="menu__link menu__link_arrow">campaigns</a>
+								<li class="menu__item menu__item_dropdown"><a href="" class="menu__link menu__link_arrow">about</a>
 									<ul class="menu__sub-list">
 										<li class="menu__sub-item">
 											<a href="" class="menu__sub-link">swimwear</a>
@@ -67,24 +98,13 @@
 										</li>
 									</ul>
 								</li>
-								<li class="menu__item"><a href="" class="menu__link menu__link_arrow">about</a>
-									<ul class="menu__sub-list">
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">swimwear</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">swimwear</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">swimwear</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">swimwear</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">swimwear</a>
-										</li>
-									</ul>
+								<li class="menu__item menu__item_dropdown"><a href="" class="menu__link menu__link_mobile">Log in</a>
+								</li>
+								<li class="menu__item menu__item_dropdown menu__link_mobile">
+									<select name="form[]" class="form">
+										<option value="1" selected>English</option>
+										<option value="2">Russian</option>
+									</select>
 								</li>
 							</ul>
 						</nav>
@@ -113,13 +133,73 @@
 								</form>
 							</div>
 						</div>
-						<a href="" class="header__cart">
+						<button type="button" class="header__cart">
 							<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag-minimal" viewBox="0 0 64 64">
-								<path stroke="null" id="svg_4" fill-opacity="null" stroke-opacity="null" fill="null" d="M11.375 17.863h41.25v36.75h-41.25z"></path>
+								<path class="header__cart-icon" stroke="null" id="svg_4" fill-opacity="null" stroke-opacity="null" fill="null" d="M11.375 17.863h41.25v36.75h-41.25z"></path>
 								<path stroke="null" id="svg_2" d="M22.25 18c0-7.105 4.35-9 9.75-9s9.75 1.895 9.75 9"></path>
 							</svg>
 							<span class="header__cart-full"></span>
-						</a>
+						</button>
+						<div class="cart">
+							<form class="cart__inner">
+								<div class="cart__header">
+									<div class="cart__title">cart</div>
+									<button class="cart__btn-close"></button>
+								</div>
+								<div class="cart__body">
+									<div class="product-cart">
+										<div class="product-cart__inner">
+											<div class="product-cart__img">
+												<img src="img/AMEN_ILYA/AA186A11-F58B-401F-8C2F-96B91E61DC2F.JPG" alt="lorem">
+											</div>
+											<div class="product-cart__content">
+												<div class="product-cart__name">Lorem, ipsum dolor.</div>
+												<div class="product-cart__size">XS</div>
+												<div class="product-cart__counter">
+													<div class="input__field">
+														<button class="down">-</button>
+														<input type="number" value="0" min="0">
+														<button class="up">+</button>
+													</div>
+												</div>
+											</div>
+											<div class="product-cart__price">
+												<span>€29</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-cart">
+										<div class="product-cart__inner">
+											<div class="product-cart__img">
+												<img src="img/AMEN_ILYA/AA186A11-F58B-401F-8C2F-96B91E61DC2F.JPG" alt="lorem">
+											</div>
+											<div class="product-cart__content">
+												<div class="product-cart__name">Lorem, ipsum dolor.</div>
+												<div class="product-cart__size">XS</div>
+												<div class="product-cart__counter">
+													<div class="input__field">
+														<button class="down">-</button>
+														<input type="number" value="0" min="0">
+														<button class="up">+</button>
+													</div>
+												</div>
+											</div>
+											<div class="product-cart__price">
+												<span>€29</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart__footer">
+									<div class="cart__top">
+										<h3 class="cart__title-footer">subtotal</h3>
+										<span class="cart__total-price">€58</span>
+									</div>
+									<p class="cart__note">Shipping, taxes, and discount codes calculated at checkout.</p>
+									<button class="cart__btn-submit" type="submit">check out</button>
+								</div>
+							</form>
+						</div>
 						<select name="form[]" class="form">
 							<option value="1" selected>English</option>
 							<option value="2">Russian</option>
@@ -1150,7 +1230,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20230410163217"></script>
+	<script src="js/app.min.js?_v=20230411120513"></script>
 </body>
 
 </html>
